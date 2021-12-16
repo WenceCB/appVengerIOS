@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Detail View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="DetailViewController" customModule="appVengersIOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ysy-hZ-TZL">
+                                <rect key="frame" x="20" y="44" width="374" height="187"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Ysy-hZ-TZL" secondAttribute="height" multiplier="2:1" id="Jl7-dh-Ucq"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="x5D-1W-42B">
+                                <rect key="frame" x="144" y="251" width="126" height="20"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.14999999999999999" tag="1" contentMode="scaleAspectFit" restorationIdentifier="star1" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Ygf-bh-ph0">
+                                        <rect key="frame" x="0.0" y="-0.5" width="22" height="20"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="star1"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.14999999999999999" tag="2" contentMode="scaleAspectFit" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="oQV-Fn-R6B" userLabel="star2">
+                                        <rect key="frame" x="26" y="-0.5" width="22" height="20"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="star2"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.14999999999999999" tag="3" contentMode="scaleAspectFit" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="FrC-aG-HCR" userLabel="star2">
+                                        <rect key="frame" x="52" y="-0.5" width="22" height="20"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="star2"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.14999999999999999" tag="4" contentMode="scaleAspectFit" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="apg-Dn-RX5" userLabel="star2">
+                                        <rect key="frame" x="78" y="-0.5" width="22" height="20"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="star2"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.14999999999999999" tag="5" contentMode="scaleAspectFit" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="JSa-zu-gUQ" userLabel="star2">
+                                        <rect key="frame" x="104" y="-0.5" width="22" height="20"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="star2"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="kz9-L5-aKd">
+                                <rect key="frame" x="20" y="291" width="374" height="221"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Ysy-hZ-TZL" secondAttribute="trailing" constant="20" id="4Ci-JV-ydz"/>
+                            <constraint firstItem="x5D-1W-42B" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="9ID-TY-SNc"/>
+                            <constraint firstItem="Ysy-hZ-TZL" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="AEr-6j-3zK"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="kz9-L5-aKd" secondAttribute="trailing" constant="20" id="LUo-zX-3hi"/>
+                            <constraint firstItem="Ysy-hZ-TZL" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="QCU-2m-GUT"/>
+                            <constraint firstItem="kz9-L5-aKd" firstAttribute="top" secondItem="x5D-1W-42B" secondAttribute="bottom" constant="20" id="aEC-og-A5a"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="kz9-L5-aKd" secondAttribute="bottom" constant="350" id="dFV-6j-R83"/>
+                            <constraint firstItem="kz9-L5-aKd" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="mon-WC-buA"/>
+                            <constraint firstItem="x5D-1W-42B" firstAttribute="top" secondItem="Ysy-hZ-TZL" secondAttribute="bottom" constant="20" id="u1K-Jj-DJz"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="avengerImage" destination="Ysy-hZ-TZL" id="qWu-UB-Cpe"/>
+                        <outlet property="avengerResume" destination="kz9-L5-aKd" id="T59-ge-eN8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="109.82142857142857"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="star.fill" catalog="system" width="128" height="116"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
